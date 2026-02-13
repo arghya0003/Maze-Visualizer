@@ -1,0 +1,29 @@
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    padding: 10px;
+    background-color: var(--grid-bg);
+    border-radius: 5px;
+    border: 1px solid var(--node-border);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.legend-node {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--node-border);
+}
+
+.node-unvisited {
+    background-color: transparent;
+}

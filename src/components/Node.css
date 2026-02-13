@@ -1,0 +1,81 @@
+.node {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--node-border);
+    display: inline-block;
+    user-select: none;
+    /* Prevent text selection during drag */
+}
+
+.node-finish {
+    background-color: var(--end-node-color);
+}
+
+.node-start {
+    background-color: var(--start-node-color);
+}
+
+.node-wall {
+    background-color: var(--wall-color);
+    animation: pop 0.2s ease-out;
+}
+
+.node-visited {
+    background-color: var(--visited-color);
+    animation: visitedAnimation 1.5s ease-out;
+}
+
+.node-path {
+    background-color: var(--path-color);
+    animation: pathAnimation 0.5s ease-out;
+}
+
+@keyframes visitedAnimation {
+    0% {
+        transform: scale(0.3);
+        background-color: rgba(0, 0, 66, 0.75);
+        border-radius: 100%;
+    }
+
+    50% {
+        background-color: rgba(17, 104, 217, 0.75);
+    }
+
+    75% {
+        transform: scale(1.2);
+        background-color: rgba(0, 217, 159, 0.75);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: var(--visited-color);
+    }
+}
+
+@keyframes pathAnimation {
+    0% {
+        transform: scale(0.6);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
