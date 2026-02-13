@@ -36,6 +36,7 @@ header h1 {
   font-weight: 700;
   text-align: center;
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
