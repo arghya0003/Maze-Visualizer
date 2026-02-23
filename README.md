@@ -3,7 +3,7 @@
 An interactive pathfinding visualizer built with **React** and **Vite**. This application demonstrates how different algorithms navigate a grid to find the shortest path between a start node and a target node.
 
 ## 🚀 Live Demo
-*(Replace this with your deployed link, e.g., https://mazevisualize.netlify.app/)*
+https://mazevisualize.netlify.app/
 
 ## 🧠 Algorithms Implemented
 
